@@ -57,34 +57,6 @@ class ViewController: UIViewController {
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[label5]-20-|", options: [], metrics: nil, views: dic))
 
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-50-[label1(30)]-10-[label2(30)]-10-[label3(30)]-10-[label4(30)]-10-[label5(30)]", options: [], metrics: nil, views: dic))
-
-//        
-////        view.addSubview(label1)
-////        view.addSubview(label2)
-////        view.addSubview(label3)
-////        view.addSubview(label4)
-//        
-//        let viewsDictionary = ["label5" : label5]
-//        
-//        view.addSubview(label5)
-//        
-//        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-5-[label5]-5-|", options: [], metrics: nil, views: viewsDictionary))
-//
-//        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-5-[label5]-5-|", options: [], metrics: nil, views: viewsDictionary))
-//        
-//        view.layoutIfNeeded()
-//        
-////        let viewsDictionary = ["label1" : label1, "label2" : label2, "label3" : label3, "label4" : label4, "label5" : label5 ]
-//        
-//        
-//        
-////        for label in viewsDictionary.keys {
-////            view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[\(label)]|", options: [], metrics: nil, views: viewsDictionary))
-////        }
-//
-//        
-////        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-5-[label1(20)]-5-[label2(30)]-5-[label3(40)]-5-[label4(50)]-5-[label5(10)]-|", options: [], metrics: nil, views: viewsDictionary))
-////
     }
     
     override var prefersStatusBarHidden: Bool {

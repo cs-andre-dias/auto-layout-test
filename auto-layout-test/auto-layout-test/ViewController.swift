@@ -50,13 +50,15 @@ class ViewController: UIViewController {
         
         let dic = ["label1":label1, "label2":label2, "label3": label3, "label4": label4, "label5": label5]
         
+        let metrics = ["labelHeight" : 88]
+        
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[label1]-20-|", options: [], metrics: nil, views: dic))
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[label2]-20-|", options: [], metrics: nil, views: dic))
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[label3]-20-|", options: [], metrics: nil, views: dic))
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[label4]-20-|", options: [], metrics: nil, views: dic))
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[label5]-20-|", options: [], metrics: nil, views: dic))
 
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-50-[label1(30)]-10-[label2(30)]-10-[label3(30)]-10-[label4(30)]-10-[label5(30)]", options: [], metrics: nil, views: dic))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-10-[label1(labelHeight@999)]-[label2(label1)]-[label3(label1)]-[label4(label1)]-[label5(label1)]-(>=10)-|", options: [], metrics: metrics, views: dic))
     }
     
     override var prefersStatusBarHidden: Bool {
